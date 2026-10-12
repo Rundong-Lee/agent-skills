@@ -68,9 +68,13 @@ New-Item -ItemType Junction -Path "$env:USERPROFILE\.agents\skills" -Target "$en
 | 技能 | 用途 | 来源 |
 |---|---|---|
 | aihot | 中文 AI 新闻、热点事件、日报周报 | https://aihot.news/aihot-skill/README.md |
+| eli5 | 像 5 岁一样解释：中文图解、交互 HTML | https://github.com/sscodeai/eli5 |
 
 AIHOT 指令文件按上游 MIT 许可分发，许可保留在 `skills/aihot/LICENSE`。服务及数据另遵循 AIHOT 使用规则。安装时已核对上游 SHA-256 清单。
 
 AIHOT 的 `.aihot-actor-id` 是本机可选统计标识，已被 Git 忽略；克隆仓库不会复制该标识。
 
 安装后开启新会话以确保客户端重新发现技能。可以提问：「使用 aihot，告诉我过去 24 小时 AI 圈最重要的 5 件事。」
+
+ELI5 保留上游 MIT 许可、模板、示例和导出脚本，安装来源提交：9bfca28c16a5d74db23d606aa9364abb4c1ad4d2。可提问：「使用 eli5，像给 5 岁孩子讲故事一样，用图解释什么是 API。」HTML 生成无需额外依赖，PDF/PNG 导出需要 Bash 和 Chromium。
+
