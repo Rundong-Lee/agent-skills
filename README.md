@@ -62,3 +62,15 @@ New-Item -ItemType Junction -Path "$env:USERPROFILE\.agents\skills" -Target "$en
 
 - [Codex 技能文档](https://learn.chatgpt.com/docs/build-skills)
 - [Kimi Code 技能文档](https://moonshotai.github.io/kimi-cli/en/customization/skills.html)
+
+## 已安装技能
+
+| 技能 | 用途 | 来源 |
+|---|---|---|
+| aihot | 中文 AI 新闻、热点事件、日报周报 | https://aihot.news/aihot-skill/README.md |
+
+AIHOT 指令文件按上游 MIT 许可分发，许可保留在 `skills/aihot/LICENSE`。服务及数据另遵循 AIHOT 使用规则。安装时已核对上游 SHA-256 清单。
+
+AIHOT 的 `.aihot-actor-id` 是本机可选统计标识，已被 Git 忽略；克隆仓库不会复制该标识。
+
+安装后开启新会话以确保客户端重新发现技能。可以提问：「使用 aihot，告诉我过去 24 小时 AI 圈最重要的 5 件事。」
